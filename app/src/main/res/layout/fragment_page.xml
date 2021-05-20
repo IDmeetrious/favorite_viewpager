@@ -18,7 +18,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/page_current_step_num" />
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/pager"
@@ -27,7 +27,7 @@
         app:layout_constraintBottom_toTopOf="@+id/page_next_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider">
+        app:layout_constraintTop_toBottomOf="@+id/page_current_step_title">
     </androidx.viewpager2.widget.ViewPager2>
 
     <Button
@@ -125,11 +125,11 @@
         android:id="@+id/divider"
         android:layout_width="0dp"
         android:layout_height="2dp"
+        android:layout_margin="8dp"
         android:background="#803F51B5"
-        android:layout_marginHorizontal="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/page_current_step_title" />
+        app:layout_constraintTop_toBottomOf="@+id/page_current_step_num" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

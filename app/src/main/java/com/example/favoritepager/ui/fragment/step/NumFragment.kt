@@ -1,13 +1,8 @@
 package com.example.favoritepager.ui.fragment.step
 
-import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
+import com.example.favoritepager.R
 
 private const val TAG = "NumFragment"
-class NumFragment: Fragment() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        Log.i(TAG, "--> onCreate: ")
-    }
-}
+
+class NumFragment : Fragment(R.layout.fragment_num_step)
